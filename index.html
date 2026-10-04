@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Jayanthi Movie Booking System</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f5f5f5;
+        }
+
+        /* Header */
+
+        header{
+            background:#1a1a2e;
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
+
+        header h1{
+            color:#ffcc00;
+            margin-bottom:8px;
+        }
+
+        /* Navigation */
+
+        nav{
+            background:#16213e;
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            padding:16px 22px;
+            font-size:17px;
+        }
+
+        nav a:hover{
+            background:#e94560;
+        }
+
+        /* Hero */
+
+        .hero{
+            min-height:650px;
+
+            display:flex;
+            flex-direction:column;
+            justify-content:flex-end;
+            align-items:center;
+
+            text-align:center;
+            padding:30px;
+
+            background-image:
+            linear-gradient(
+                rgba(0,0,0,0.20),
+                rgba(0,0,0,0.75)
+            ),
+            url("https://i.ibb.co/prdV5F7v/IMG-20261004-174737.jpg");
+
+            /* Theatre photo smaller and full */
+
+            background-size:80% auto;
+            background-position:center top;
+            background-repeat:no-repeat;
+
+            background-color:#080d18;
+
+            color:white;
+        }
+
+        /* Welcome Text */
+
+        .hero h2{
+            font-size:32px;
+            color:#ffcc00;
+            margin-top:20px;
+            margin-bottom:15px;
+        }
+
+        .hero p{
+            font-size:20px;
+            margin-bottom:25px;
+        }
+
+        /* Browse Movies Button */
+
+        .btn{
+            background:#e94560;
+            color:white;
+            text-decoration:none;
+            padding:14px 30px;
+            border-radius:25px;
+            font-size:18px;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#ffcc00;
+            color:#1a1a2e;
+        }
+
+        /* Features */
+
+        .features{
+            padding:40px 8%;
+            text-align:center;
+        }
+
+        .features h2{
+            color:#1a1a2e;
+            margin-bottom:30px;
+            font-size:32px;
+        }
+
+        .feature-container{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            width:250px;
+            padding:25px;
+            border-radius:12px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .card h3{
+            color:#e94560;
+            margin-bottom:12px;
+        }
+
+        .card p{
+            color:#555;
+            line-height:1.5;
+        }
+
+        /* Footer */
+
+        footer{
+            background:#1a1a2e;
+            color:white;
+            text-align:center;
+            padding:18px;
+            margin-top:30px;
+        }
+
+        /* Mobile */
+
+        @media(max-width:600px){
+
+            .hero{
+                min-height:550px;
+
+                background-size:100% auto;
+                background-position:center top;
+            }
+
+            .hero h2{
+                font-size:28px;
+            }
+
+            .hero p{
+                font-size:16px;
+            }
+
+            nav a{
+                font-size:15px;
+                padding:12px;
+            }
+
+            .card{
+                width:100%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- Header -->
+
+<header>
+
+    <h1>🎬  JAYANTHI MOVIE BOOKING SYSTEM</h1>
+
+    <p>Book Your Favourite Movies Easily</p>
+
+</header>
+
+
+<!-- Navigation -->
+
+<nav>
+
+    <a href="index.html">Home</a>
+
+    <a href="movies.html">Movies</a>
+
+    <a href="theatres.html">Theatres</a>
+
+    <a href="booking.html">Booking</a>
+
+    <a href="about.html">About us</a>
+
+    <a href="contact.html">Contact</a>
+
+</nav>
+
+
+<!-- Home Section -->
+
+<section class="hero">
+
+    <h2>Welcome to Movie Booking</h2>
+
+    <p>
+        Find your favourite movie and book your tickets easily.
+    </p>
+
+    <a href="movies.html" class="btn">
+        🎟️ Browse Movies
+    </a>
+
+</section>
+
+
+<!-- Features -->
+
+<section class="features">
+
+    <h2>Why Choose Us?</h2>
+
+    <div class="feature-container">
+
+
+        <div class="card">
+
+            <h3>🎬 Latest Movies</h3>
+
+            <p>
+                Explore the latest movies currently available in theatres.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>🎟️ Easy Booking</h3>
+
+            <p>
+                Book your movie tickets quickly and easily.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>🏢 Best Theatres</h3>
+
+            <p>
+                Choose from multiple theatres and convenient locations.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>💳 Simple Payment</h3>
+
+            <p>
+                Enjoy a simple and convenient ticket booking experience.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+
+    <p>
+        © 2026 Movie Booking System | All Rights Reserved
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

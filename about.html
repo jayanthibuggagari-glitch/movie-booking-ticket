@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | Jayanthi Movie Booking System</title>
+
+
+    <style>
+
+        /* =========================
+           RESET
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+
+        body {
+            background-color: #f5f5f5;
+            color: #222;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            width: 100%;
+            background-color: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding-top: 25px;
+        }
+
+
+        header h1 {
+            color: #ffd700;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+
+        header p {
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+
+        /* =========================
+           NAVIGATION BAR
+        ========================= */
+
+        nav {
+            width: 100%;
+            height: 50px;
+
+            background-color: #16213e !important;
+
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+
+            text-align: center;
+
+            padding: 0 !important;
+            margin: 0 !important;
+
+            position: relative;
+            float: none;
+        }
+
+
+        /* =========================
+           NAVIGATION LINKS
+        ========================= */
+
+        nav a {
+            color: white !important;
+
+            text-decoration: none;
+
+            font-size: 17px;
+
+            margin: 0 30px;
+
+            padding: 4px 0;
+
+            display: inline-block;
+
+            white-space: nowrap;
+        }
+
+
+        nav a:hover {
+            color: #ffd700 !important;
+        }
+
+
+        /* =========================
+           ABOUT SECTION
+        ========================= */
+
+        .about-section {
+
+            width: 90%;
+
+            max-width: 1100px;
+
+            margin: 60px auto;
+
+            background-color: white;
+
+            padding: 40px;
+
+            border-radius: 10px;
+
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+
+        /* =========================
+           ABOUT HEADING
+        ========================= */
+
+        .about-section h2 {
+
+            font-size: 36px;
+
+            color: #111;
+
+            text-align: center;
+
+            margin-bottom: 35px;
+        }
+
+
+        /* =========================
+           LEFT MATTER + RIGHT PHOTO
+        ========================= */
+
+        .about-content {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 40px;
+        }
+
+
+        /* =========================
+           LEFT SIDE MATTER
+        ========================= */
+
+        .about-text {
+
+            width: 55%;
+
+            text-align: left;
+        }
+
+
+        .about-text p {
+
+            font-size: 18px;
+
+            line-height: 1.8;
+
+            margin-bottom: 20px;
+        }
+
+
+        /* =========================
+           RIGHT SIDE PHOTO
+        ========================= */
+
+        .about-image-container {
+
+            width: 45%;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+        }
+
+
+        .about-image {
+
+            width: 100%;
+
+            max-width: 450px;
+
+            height: 450px;
+
+            object-fit: cover;
+
+            border-radius: 12px;
+
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+
+            width: 100%;
+
+            background-color: #1a1a2e;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 20px;
+
+            margin-top: 50px;
+        }
+
+
+        /* =========================
+           TABLET
+        ========================= */
+
+        @media (max-width: 1100px) {
+
+            nav a {
+
+                font-size: 16px;
+
+                margin: 0 20px;
+            }
+
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 700px) {
+
+            header h1 {
+
+                font-size: 28px;
+            }
+
+
+            header p {
+
+                font-size: 16px;
+
+                margin-bottom: 20px;
+            }
+
+
+            nav {
+
+                height: auto;
+
+                min-height: 55px;
+
+                padding: 10px 0 !important;
+
+                flex-wrap: wrap;
+            }
+
+
+            nav a {
+
+                font-size: 16px;
+
+                margin: 5px 10px;
+            }
+
+
+            .about-section {
+
+                width: 90%;
+
+                padding: 25px;
+            }
+
+
+            .about-section h2 {
+
+                font-size: 28px;
+            }
+
+
+            /* Mobile lo matter first, photo next */
+
+            .about-content {
+
+                flex-direction: column;
+
+                gap: 25px;
+            }
+
+
+            .about-text {
+
+                width: 100%;
+
+                text-align: center;
+            }
+
+
+            .about-image-container {
+
+                width: 100%;
+            }
+
+
+            .about-image {
+
+                width: 100%;
+
+                height: 230px;
+            }
+
+
+            .about-text p {
+
+                font-size: 16px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <header>
+
+
+        <h1>
+            🎬 JAYANTHI MOVIE BOOKING SYSTEM
+        </h1>
+
+
+        <p>
+            Book Your Favourite Movies Easily
+        </p>
+
+
+        <!-- =========================
+             NAVIGATION
+        ========================= -->
+
+        <nav>
+
+
+            <a href="index.html">
+                Home
+            </a>
+
+
+            <a href="movies.html">
+                Movies
+            </a>
+
+
+            <a href="theatres.html">
+                Theatres
+            </a>
+
+
+            <a href="booking.html">
+                Booking
+            </a>
+
+
+            <a href="about.html">
+                About Us
+            </a>
+
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+
+        </nav>
+
+
+    </header>
+
+
+
+    <!-- =========================
+         ABOUT US CONTENT
+    ========================= -->
+
+    <section class="about-section">
+
+
+        <h2>
+            About Us
+        </h2>
+
+
+        <!-- =========================
+             LEFT MATTER + RIGHT PHOTO
+        ========================= -->
+
+        <div class="about-content">
+
+
+            <!-- LEFT SIDE MATTER -->
+
+            <div class="about-text">
+
+
+                <p>
+                    Welcome to our Movie Booking System.
+                    Our website provides a simple and convenient
+                    way to explore movies and book movie tickets
+                    online.
+                </p>
+
+
+                <p>
+                    Users can view available movies, check theatres,
+                    select shows and book their favourite movies
+                    easily.
+                </p>
+
+
+                <p>
+                    Our main goal is to make movie ticket booking
+                    simple, fast and user-friendly.
+                </p>
+
+
+                <p>
+                    We provide an easy-to-use platform where users
+                    can choose their favourite movie, select a
+                    theatre, select seats and complete their booking.
+                </p>
+
+
+            </div>
+
+
+
+            <!-- RIGHT SIDE PHOTO -->
+
+            <div class="about-image-container">
+
+
+                <img
+                    src="https://i.ibb.co/wZ9F3p2Z/IMG-20261004-WA0073.jpg"
+                    alt="Jayanthi Movie Theatre"
+                    class="about-image"
+                >
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+
+        <p>
+            © 2026 Movie Booking System | All Rights Reserved
+        </p>
+
+
+    </footer>
+
+
+</body>
+
+</html>

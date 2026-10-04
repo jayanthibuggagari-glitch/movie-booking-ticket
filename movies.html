@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Movies | Jayanthi Movie Booking System</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* Header */
+
+header{
+    background:#1a1a2e;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    color:#ffcc00;
+    margin-bottom:8px;
+}
+
+/* Navigation */
+
+nav{
+    background:#16213e;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:16px 22px;
+    font-size:17px;
+}
+
+nav a:hover{
+    background:#e94560;
+}
+
+/* Movies Section */
+
+.movies{
+    width:90%;
+    margin:40px auto;
+}
+
+.movies h2{
+    text-align:center;
+    color:#1a1a2e;
+    font-size:35px;
+    margin-bottom:30px;
+}
+
+/* Movie Cards */
+
+.movie-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.movie-card{
+    width:280px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.movie-card:hover{
+    transform:translateY(-8px);
+}
+
+.movie-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.movie-info{
+    padding:20px;
+    text-align:center;
+}
+
+.movie-info h3{
+    color:#e94560;
+    margin-bottom:10px;
+}
+
+.movie-info p{
+    color:#555;
+    margin-bottom:15px;
+}
+
+.book-btn{
+    display:inline-block;
+    background:#e94560;
+    color:white;
+    text-decoration:none;
+    padding:10px 25px;
+    border-radius:20px;
+}
+
+.book-btn:hover{
+    background:#ffcc00;
+    color:#1a1a2e;
+}
+
+/* Footer */
+
+footer{
+    background:#1a1a2e;
+    color:white;
+    text-align:center;
+    padding:18px;
+    margin-top:40px;
+}
+
+/* Mobile */
+
+@media(max-width:600px){
+
+    .movie-card{
+        width:100%;
+    }
+
+    nav a{
+        font-size:15px;
+        padding:12px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- Header -->
+
+<header>
+
+<h1>🎬  JAYANTHI MOVIE BOOKING SYSTEM</h1>
+
+<p>Choose Your Favourite Movie</p>
+
+</header>
+
+
+<!-- Navigation -->
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="movies.html">Movies</a>
+<a href="theatres.html">Theatres</a>
+<a href="booking.html">Booking</a>
+<a href="about.html">About US</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+
+<!-- Movies -->
+
+<section class="movies">
+
+<h2>🎬 Now Showing</h2>
+
+
+<div class="movie-container">
+
+
+<!-- Movie 1 -->
+
+<div class="movie-card">
+
+<img src="https://i.ibb.co/kgZHk9cj/IMG-20261004-WA0058.jpg" alt="deewana">
+
+<div class="movie-info">
+
+<h3>Deewana</h3>
+
+<p>⭐ Rating: 8.8/10 </p>
+
+<a href="booking.html" class="book-btn">
+Book Ticket
+</a>
+
+</div>
+
+</div>
+
+
+<!-- Movie 2 -->
+
+<div class="movie-card">
+
+<img src="https://i.ibb.co/hJxf0mNz/IMG-20261004-WA0059.jpg" alt="chennai love story">
+
+<div class="movie-info">
+
+<h3>chennai love story</h3>
+
+<p>⭐ Rating: 8.5/10</p>
+
+<a href="booking.html" class="book-btn">
+Book Ticket
+</a>
+
+</div>
+
+</div>
+<!-- Movie 3 -->
+
+<div class="movie-card">
+
+<img src="https://i.ibb.co/DjG5c3g/IMG-20261004-WA0060.jpg" alt="RRR">
+
+<div class="movie-info">
+
+<h3>RRR</h3>
+
+<p>⭐ Rating: 8.5/10</p>
+
+<a href="booking.html" class="book-btn">
+Book Ticket
+</a>
+
+</div>
+
+</div>
+
+<!-- Movie 4 -->
+
+<div class="movie-card">
+
+<img src="https://i.ibb.co/zVBGTD2J/IMG-20261004-WA0061.jpg" alt="pushpa">
+
+<div class="movie-info">
+
+<h3>pushpa</h3>
+
+<p>⭐ Rating: 8.6/10</p>
+
+<a href="booking.html" class="book-btn">
+Book Ticket
+</a>
+
+</div>
+
+</div>
+
+<!-- Movie 5 -->
+
+<div class="movie-card">
+
+<img src="https://i.ibb.co/wFTPN4VG/IMG-20261004-WA0062.jpg" alt="rajasaab">
+
+<div class="movie-info">
+
+<h3>rajasaab</h3>
+
+<p>⭐ Rating: 8.6/10</p>
+
+<a href="booking.html" class="book-btn">
+Book Ticket
+</a>
+
+</div>
+
+</div>
+<!-- Movie 6 -->
+
+<div class="movie-card">
+
+<img src="https://i.ibb.co/gM581H35/IMG-20261004-WA0063.jpg" alt="paradise">
+
+<div class="movie-info">
+
+<h3>paradise</h3>
+
+<p>⭐ Rating: 8.6/10</p>
+
+<a href="booking.html" class="book-btn">
+Book Ticket
+</a>
+
+</div>
+
+</div>
+
+<!-- Movie 7 -->
+
+<div class="movie-card">
+
+<img src="https://i.ibb.co/ymZdrC2b/IMG-20261004-WA0064.jpg" alt="Gatta kusti">
+
+<div class="movie-info">
+
+<h3>Gatta kusthi</h3>
+
+<p>⭐ Rating: 8.0/10</p>
+
+<a href="booking.html" class="book-btn">
+Book Ticket
+</a>
+
+</div>
+
+</div>
+<!-- Movie 8 -->
+
+<div class="movie-card">
+
+<img src="https://i.ibb.co/MkJXy0w6/IMG-20261004-WA0065.jpg" alt="peddi">
+
+<div class="movie-info">
+
+<h3>peddi</h3>
+
+<p>⭐ Rating: 8.6/10</p>
+
+<a href="booking.html" class="book-btn">
+Book Ticket
+</a>
+
+</div>
+
+</div>
+<!-- Movie 9 -->
+
+<div class="movie-card">
+
+<img src="https://i.ibb.co/Kz934M4r/IMG-20261004-WA0066.jpg" alt="spiderman">
+
+<div class="movie-info">
+
+<h3>spiderman</h3>
+
+<p>⭐ Rating: 8.6/10</p>
+
+<a href="booking.html" class="book-btn">
+Book Ticket
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+
+<p>
+© 2026 Movie Booking System | All Rights Reserved
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
